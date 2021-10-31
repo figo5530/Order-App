@@ -1,11 +1,16 @@
 import React from 'react';
 import { connect } from 'dva';
+import { Layout } from 'antd'
+import styles from './index.scss'
+
+const { Header, Content } = Layout
 
 function Index() {
   return (
-    <div>
-      Let's get started!!!!
-    </div>
+    <Layout className={styles.Layout}>
+      <Header>Header</Header>
+      <Content className={styles.Content}>Content</Content>
+    </Layout>
   );
 }
 
